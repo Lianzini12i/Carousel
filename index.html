@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            position: relative;
+            background-color: #a5084c;
+        }
+    .arrow {
+      font-size: 15px;
+      cursor: pointer;
+      border: none;
+      margin: 10px 10px;
+      background-color: inherit;
+    }
+    .arrow:hover{
+      color: white;
+    }
+    #name{
+      color: #0858a6;
+    }
+    .left{
+        left: 5px;
+    }
+    .right{
+        right: 5px;
+    }
+
+  #playerCard {
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px 20px;
+    width: 280px;
+    text-align: center;
+    position: relative;
+    height: 450px;
+}
+
+#logo img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+  background-color: transparent;
+}
+
+h4 {
+  font-size: 20px;
+  margin: 8px 0;
+}
+
+#position {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#profile img {
+  width: 100px;
+  height: 140px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 2px solid #ccc;
+}
+
+
+#playStyle {
+  font-size: 16px;
+  color: red;
+  margin-bottom: 6px;
+}
+
+#serialNo {
+  font-size: 20px;
+  font-style: italic;
+  margin-top: 10px;
+}
+    </style>
+</head>
+<body>
+
+    <button class="left arrow" onclick="Prev()">Prev</button>
+
+    <div id="playerCard"></div>
+
+    <button class="right arrow" onclick="Next()">Next</button>
+
+</body>
+</html>
+<script src="index.js"></script>
