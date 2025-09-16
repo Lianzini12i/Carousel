@@ -6,11 +6,11 @@ function pickPic() {
 
     let reader = new FileReader();
     reader.readAsDataURL(file)
-    reader.onload = function (ev) {
+    reader.addEventListener('load', (ev)=>{    
         let result = ev.target.result
         imgArr.push(result)
         displayCarousel()
-    }
+    })
 }
 
 // function addImg() {
