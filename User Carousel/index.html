@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        /* height: 80%; */
+    }
+    h2{
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        background-color: chartreuse;
+        padding: 10px;
+    }
+
+    #head{
+        padding: 5px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+        background-color: rgb(145, 184, 106);
+    }
+
+    
+
+    footer{
+        background-color: chartreuse;
+        height: 70px;
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+    }
+
+    #carouselContain{
+        padding-top: 50px;
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50vh;
+    }
+
+    #carouselContain img{
+        width: 300px;
+        height: 100%;
+    }
+
+    .nav{
+        border: none;
+        color: chartreuse;
+        background-color: white;
+        color: rgb(56, 80, 33);
+        padding: 10px;
+    }
+    .nav:hover{
+        color: chartreuse;
+    }
+
+    p{
+        text-align: center;
+    }
+
+</style>
+<body>
+    
+    <h2>Create your carousel!</h2>
+
+    <div id="head">
+            <label for="photo"> Add  your images here!</label><br>
+            <input type="file" id="imageInp"  onchange="pickPic()">
+<!--            <button id="addBtn" onclick="addImg()">Add</button>-->
+    </div>
+
+    <div id="carouselContain">
+        <button class="nav" onclick="prev()">Prev</button>
+        <img id="imgHold" src="" />
+        <button class="nav" onclick="next()">Next</button>
+    </div>
+
+    <br>
+
+    <p id="carIndex"></p>
+
+    
+    <footer></footer> 
+
+
+</body>
+</html>
+<script src="index.js"></script>
+
+
